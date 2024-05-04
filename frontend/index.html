@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONT LINKS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Lobster&family=Pacifico&family=Poppins&family=Roboto&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <title>URL</title>
+    <link rel="icon" href="./images/hacker-removebg-preview.png" type="image/png">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: transparent; /* Remove background image */
+        height: 100vh;
+        width: 100%;
+        position: relative;
+      }
+
+      video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Set the width to 100% of the viewport width */
+        height: 100vh; /* Set the height to 100% of the viewport height */
+        object-fit: cover; /* Maintain aspect ratio and cover the entire viewport */
+        z-index: -1; /* Place the video behind the content */
+    }
+    </style>
+  </head>
+
+  <body>
+    <video autoplay loop muted playsinline>
+      <source src="./video/8.mp4" type="video/mp4" />
+      <!-- Add additional source elements for other video formats if needed -->
+    </video>
+    <!-- <img src="./images/sk-removebg-preview.png" alt="" srcset="" class="back-img"> -->
+    <div id="root">
+      <!-- Your existing content here -->
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
